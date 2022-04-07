@@ -1,0 +1,62 @@
+Algorithmes OrientationEtoiles
+T = tableau[1..8] dechaine de caractère.
+fonction TriTableauEtoile(ref T1 : tableau[1..8]de chaines de caractère) : vide;
+var i,j,k :entier;
+  début
+    pour i allant de 1 à 7 faire
+      pour j allant de 8 à i+1 par pas de -1 faire
+       Repeter
+si Ascii(T1[j(k)]) < ASCII(T1[j-1(k)]) alors
+          echange(T1, j, j-1);
+sinon
+k<-k+1
+        finsi
+jusqu'à i=7 et j=1
+      finpour
+    finpour
+  fin
+finfonction
+fonction TriNouveau(ref T1 : tableau[1..8] de chaine de carctère) :vide ;
+var etoile, mot: chaine de caractère
+début
+répéter
+afficher("enter non étoile", étoile)
+saisir(étoile)
+	
+T1[long(T1)] = étoile
+TriTableauEtoile(T1);
+retourner(T1);
+fin
+finfonction
+
+TriTableauEtoile(T1);
+
+fonction rechercheDicho(T: tab; N, val: entier): chaine de caractères
+var i, pos, mil, inf, sup: entier
+etoileATrouver : chaine de caractère.
+début
+pos <- -1
+inf <- 1
+sup <- N
+Affiher (" Donner etoile a trouver", etoileATrouver)
+Saisir (etoileATrouver)
+tantque inf <= sup et pos = -1 faire
+mil <- (inf + sup) / 2
+si T[mil] = etoileATrouver alors
+pos <- mil
+sinon
+	si val < T[mil] alors
+	sup <- mil - 1
+	sinon
+	inf <- mil + 1
+	finsi
+finsi
+fin tantque
+fin
+finfonction
+
+recherche(T1)
+
+fin
+
+

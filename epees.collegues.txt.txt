@@ -1,0 +1,29 @@
+                Algorithmes EpeeCollegues
+T = tableau[0..12,0..8] de chaine de caractère;
+Début
+
+fonction triBulle (ref T1 :tableau[1..12,0..8] de car) : vide
+var i,j,k,nom:entier;
+const T2 = [Alban, Jim, Bob, Albatroz, Jinto, Bow, Hijo, Manu, Seb, Teilo, Charles, Xavier,Takwa]
+début
+
+pour i allant de 1 à 12 faire 
+pour j allant de 13 à 1 par pas de -1 faire
+
+Repeter
+si ASCII(T2[j,k])<ASCII(T2[j-1,k) alors echange(T2, j, j-1);
+sinon 
+k <-- k+1
+fin si
+fin pour
+fin pour
+finfoction
+retourner(triBulle)
+fin
+
+
+ 
+
+
+
+

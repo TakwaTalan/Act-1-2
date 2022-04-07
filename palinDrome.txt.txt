@@ -1,0 +1,23 @@
+Algorithme Palindrome
+mot tableau [1..N] de chaine de caractère
+
+Début
+Afficher ("Donner un mot svp:" ,mot);
+N <-- Longueur (mot)
+Fonction Inversion (ref T1:tableau [1..N] de car): booleen
+var i,j : entier
+decision : booleen
+ 
+pour i de 1 à N en allant en pas de 1
+pour j de N à 1 en allant en pas de -1
+Repeter
+si
+ T1[i] = T1[j] alors
+decision <-- vrai
+sinon
+decision <-- faux
+ jusqu'à decision 
+finsi
+fin pour
+fin pour
+ 
